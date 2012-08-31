@@ -1,0 +1,55 @@
+  <%
+  #Default value attribution
+  dsize = 300
+  @width = dsize if @width == nil
+  @height = dsize if @height == nil
+  @endomargin = 0 if @endomargin == nil
+  @width = @height = @size if @size!=nil
+  
+  if @data==nil
+    @data=[1,1,1]
+  end
+
+  if @endomargin >= 1
+    @endomargin = 0
+    puts "@endomargin deve ser menor que 1"
+  end
+
+  @endomargin = 0.3
+
+  %>
+  <script type="text/javascript">
+
+    var width = <%=@width%>,height = <%=@height%>,
+    outerRadius = Math.min(width, height) / 2,
+    innerRadius = outerRadius * <%= @endomargin%>,
+    data = <%=@data%>,
+    color = d3.scale.category20(),
+    donut = d3.layout.pie(),
+    arc = d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius);
+
+var vis = d3.select("<%=@target_element%>")
+  .append("svg")
+    .data([data])
+    .attr("width", width)
+    .attr("height", height);
+
+var arcs = vis.selectAll("g.arc")
+    .data(donut)
+  .enter().append("g")
+    .attr("class", "arc")
+    .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
+
+arcs.append("path")
+    .attr("fill", function(d, i) { return color(i); })
+    .attr("d", arc);
+
+arcs.append("text")
+    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+    .attr("dy", ".35em")
+    .attr("class", "pie-chart-text-label")
+    .attr("text-anchor", "middle")
+    .attr("display", function(d) { return d.value > .15 ? null : "none"; })
+    .text(function(d, i) { return d.value.toFixed(2); });
+
+    </script>
