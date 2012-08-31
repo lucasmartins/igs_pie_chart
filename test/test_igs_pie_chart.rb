@@ -7,18 +7,6 @@ class IgsPieChartTest < Test::Unit::TestCase
   HTML_TEST_OUTPUT='test.output.html'
   JS_TEST_OUTPUT='test.output.js'
 
-  def test_english_hello
-    assert_equal "hello world", "hello world"
-  end
-
-  def test_any_hello
-    assert_equal "hello world", "hello world"
-  end
-
-  def test_spanish_hello
-    assert_equal "hola mundo", "hola mundo"
-  end
-
   def test_pie_chart_rendering
     pie = IgsPieChart.new(200,0.4,'body',[1,2,3,5,8,13,21,34,55,89,144])
     @render = pie.render
