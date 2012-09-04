@@ -8,7 +8,7 @@ class IgsPieChartTest < Test::Unit::TestCase
   JS_TEST_OUTPUT='test.output.js'
 
   def test_pie_chart_rendering
-    pie = IgsPieChart.new(200,0.4,'body',[1,2,3,5,8,13,21,34,55,89,144])
+    pie = IgsPieChart.new(200,0.4,'body',{'um'=>1,'dois'=>2,'tres'=>3,'cinco'=>5,'oito'=>8,'treze'=>13,'vinte1'=>21,'trinta4'=>34,'cinq5'=>55,'oito9'=>89,'cqq'=>144})
     @render = pie.render
     assert_not_equal nil, @render
 
@@ -24,7 +24,7 @@ class IgsPieChartTest < Test::Unit::TestCase
     end
 
     begin
-      `firefox #{HTML_TEST_OUTPUT}`
+      `open #{HTML_TEST_OUTPUT}`
     rescue Exception => e
       puts "Ouch! #{e}"
     end

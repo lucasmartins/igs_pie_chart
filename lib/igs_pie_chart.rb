@@ -7,7 +7,8 @@ class IgsPieChart
   def initialize(size,endomargin=0,target_element='body',data)
     @size = size
     @endomargin = endomargin
-    @data = data
+    @data = data.values
+    @labels = data.keys
     @target_element = target_element
   end
 
