@@ -1,10 +1,10 @@
 #encoding: utf-8
 Gem::Specification.new do |s|
   s.name        = 'igs_pie_chart'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = Date.today
   s.summary     = "Pie Chart: uma GEM super cool pra gerar pizzas."
-  s.description = "#{s.summary} Amplamente utilizado pelas Câmaras, Tribunais, e Palácios brasileiros e aclamado pela população."
+  s.description = "#{s.summary} Amplamente utilizado pelas Camaras, Tribunais, e Palacios brasileiros e aclamado pela populacao."
   s.authors     = ["Lucas N. Martins"]
   s.email       = 'lucas.martins@innovit.com.br'
   s.files       = ["lib/igs_pie_chart.rb"]
