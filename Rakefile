@@ -6,3 +6,9 @@ end
 
 desc "Run tests"
 task :default => :test
+
+desc "Build gem"
+task :build do
+  `rm *.gem`
+  puts `gem build *.gemspec`
+end
