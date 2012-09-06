@@ -1,8 +1,9 @@
+language: ruby
 rvm:
   - 1.8.7
   - 1.9.2
   - 1.9.3
-  - jruby
+  - jruby-18mode
   - rbx-18mode
 
 before_script: "sudo ntpdate -ub ntp.ubuntu.com pool.ntp.org; true"
@@ -10,5 +11,5 @@ script: "bundle exec rake test"
 
 matrix:
   allow_failures:
-    - rvm: jruby
+    - rvm: jruby-18mode
     - rvm: rbx-18mode
