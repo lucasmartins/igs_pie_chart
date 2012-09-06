@@ -93,7 +93,7 @@ Credits
 
 IGS Pie Chart is maintained and funded by [Innovit LTDA](http://innovit.com.br)
 
-Thank you to all [the contributors](https://github.com/thoughtbot/paperclip/contributors)!
+Special thanks to [Andrik](https://github.com/andrik), for pushing the company to a more open perspective.
 
 The names and logos for Innovit are trademarks of Innovit LTDA.
 
