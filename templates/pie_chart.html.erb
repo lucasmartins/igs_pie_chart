@@ -12,7 +12,7 @@
 
   if @endomargin >= 1
     @endomargin = 0
-    puts "@endomargin deve ser menor que 1"
+    STDERR.puts "@endomargin must be less than 1"
   end
 
   @endomargin = 0.3

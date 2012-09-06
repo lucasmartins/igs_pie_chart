@@ -3,22 +3,14 @@ IGS Pie Chart
 
 [![Build Status](https://secure.travis-ci.org/lucasmartins/igs_pie_chart.png?branch=master)](http://travis-ci.org/lucasmartins/igs_pie_chart) [![Dependency Status](https://gemnasium.com/lucasmartins/igs_pie_chart.png?travis)](https://gemnasium.com/lucasmartins/igs_pie_chart) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/lucasmartins/igs_pie_chart)
 
-Paperclip is intended as an easy file attachment library for Active Record. The
-intent behind it was to keep setup as easy as possible and to treat files as
-much like other attributes as possible. This means they aren't saved to their
-final locations on disk, nor are they deleted if set to nil, until
-ActiveRecord::Base#save is called. It manages validations based on size and
-presence, if required. It can transform its assigned image into thumbnails if
-needed, and the prerequisites are as simple as installing ImageMagick (which,
-for most modern Unix-based systems, is as easy as installing the right
-packages). Attached files are saved to the filesystem and referenced in the
-browser by an easily understandable specification, which has sensible and
-useful defaults.
 
-See the documentation for `has_attached_file` in [`Paperclip::ClassMethods`](http://rubydoc.info/gems/paperclip/Paperclip/ClassMethods) for
-more detailed options.
+Pie Chart is a gem for pizza/donut (charts) making. It uses D3 (Data Driven Documents) to aggregate the data and render SVG awesomeness into an HTML element of your choosing.
 
-The complete [RDoc](http://rdoc.info/gems/paperclip) is online.
+Pie Chart is the first piece of the Innovit Gem Suite, different ways to visualize your data will be available in the near future.
+
+Pie Chart is not production ready yet, although it works fine.
+
+The RDoc is not available yet, but there are few files to peak and the [test](https://github.com/lucasmartins/igs_pie_chart/blob/master/test/test_igs_pie_chart.rb) shows how it works.
 
 
 Requirements
@@ -99,14 +91,13 @@ Credits
 
 ![Innovit](http://innovit.com.br/logos_innovit/logo-curvas_180.png)
 
-IGS Pie Chart is maintained and funded by [innovit, ltda](http://innovit.com.br)
+IGS Pie Chart is maintained and funded by [Innovit LTDA](http://innovit.com.br)
 
 Thank you to all [the contributors](https://github.com/thoughtbot/paperclip/contributors)!
 
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+The names and logos for Innovit are trademarks of Innovit LTDA.
 
 License
 -------
 
-Paperclip is Copyright © 2008-2011 thoughtbot. It is free software, and may be
-redistributed under the terms specified in the MIT-LICENSE file.
+IGS Pie Chart is free software, we haven't yet studied the best license for it, MIT looks fine though.
