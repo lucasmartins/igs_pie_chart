@@ -10,7 +10,7 @@ Pie Chart is the first piece of the Innovit Gem Suite, different ways to visuali
 
 Pie Chart is not production ready yet, although it works fine.
 
-The RDoc is not available yet, but there are few files to peak and the [test](https://github.com/lucasmartins/igs_pie_chart/blob/master/test/test_igs_pie_chart.rb) shows how it works.
+The RDoc is not available yet, but there are few files to peek and the [test](https://github.com/lucasmartins/igs_pie_chart/blob/master/test/test_igs_pie_chart.rb) shows how it works.
 
 
 Requirements
