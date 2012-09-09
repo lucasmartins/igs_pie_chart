@@ -29,6 +29,17 @@
     .labels li{
       margin-top: 0.2em;
     }
+    text.pie-chart-text-label{
+      /*color:white;
+      #font-weight: bold;*/
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    
+    .labels li span {
+      color:white;
+      font-weight: bold;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
   </style>
 
   <script type="text/javascript">
@@ -62,11 +73,10 @@ arcs.append("text")
     .attr("dy", ".35em")
     .attr("class", "pie-chart-text-label")
     .attr("text-anchor", "middle")
-    .attr("display", function(d) { return d.value > .15 ? null : "none"; })
-    /*
+    .attr("style", "stroke-opacity:0.0;fill:#FFFFFF;font-weight:600;")
+    .attr("display", function(d) { return d.value > 20 ? null : "none"; })
     .text(function(d, i) { return d.value.toFixed(1); });
-    */
-
+    
     </script>
 
 <ul class="labels">
@@ -74,7 +84,7 @@ arcs.append("text")
 <% l = l.gsub('_',' ') %>
   <li>
     <span id="color_<%=i%>">
-      &nbsp;&nbsp;&nbsp;
+      &nbsp;<%= @data[i] %>%&nbsp;
     </span>
     <%= l.to_s.capitalize %>
     <script type="text/javascript">

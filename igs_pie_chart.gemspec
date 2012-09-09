@@ -1,7 +1,7 @@
 #encoding: utf-8
 Gem::Specification.new do |s|
   s.name        = 'igs_pie_chart'
-  s.version     = '0.0.8a'
+  s.version     = '0.0.8'
   s.date        = Date.today
   s.summary     = "Pie Chart is a gem for pizza making."
   s.description = "#{s.summary} It uses D3 (Data Driven Documents) to aggregate the data and render the SVG awesomeness."
