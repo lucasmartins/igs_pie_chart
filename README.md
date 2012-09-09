@@ -6,7 +6,7 @@ IGS Pie Chart
 
 Pie Chart is a gem for pizza/donut (charts) making. It uses D3 (Data Driven Documents) to aggregate the data and render SVG awesomeness into an HTML element of your choosing.
 
-Pie Chart is the first piece of the Innovit Gem Suite, different ways to visualize your data will be available in the near future.
+Pie Chart is the first piece of the Innovative Graph Suite, different ways to visualize your data will be available in the near future.
 
 Pie Chart is not production ready yet, although it works fine.
 
