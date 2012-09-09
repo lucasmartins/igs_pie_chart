@@ -1,6 +1,9 @@
 #encoding: utf-8
 require 'erb'
 
+module Igs
+end
+
 unless "".respond_to? 'camelize'
   class String
     def camelize
@@ -10,7 +13,7 @@ unless "".respond_to? 'camelize'
   end
 end
 
-class IgsPieChart
+class Igs::PieChart
 
   # data=[100,299,234,55]
   def initialize(size,endomargin=0,target_element='body',data)
