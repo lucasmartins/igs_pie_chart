@@ -58,7 +58,7 @@ Add D3 to your Rails javascript manifest (application.js):
 Make your pie (controller):
 
 ```ruby
-@pie = IgsPieChart.new(200,0.4,'body',{'Mussarela'=>25,'Brocolli'=>25,'Pepperoni'=>50})
+@pie = Igs::PieChart.new(200,0.4,'body',{'Mussarela'=>25,'Brocolli'=>25,'Pepperoni'=>50})
 ```
 
 Savor it raw (view):
@@ -71,7 +71,7 @@ Breakdown
 ---------
 
 ```ruby
-IgsPieChart.new(size,endomargin=0,target_element='body',data)
+Igs::PieChart.new(size,endomargin=0,target_element='body',data)
   size => "Integer, Your X and Y measures"
   endomargin => "Float, from 0 to 1, represents the internal margin, 0 for Pizza Pie, 0.5 for a nice Donut."
   target_element => "String, the target HTML element where the chart will be rendered."

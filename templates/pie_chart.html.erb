@@ -1,21 +1,5 @@
   <%
-  #Default value attribution
-  dsize = 300
-  @width = dsize if @width == nil
-  @height = dsize if @height == nil
-  @endomargin = 0 if @endomargin == nil
-  @width = @height = @size if @size!=nil
-  
-  if @data==nil
-    @data=[1,1,1]
-  end
 
-  if @endomargin >= 1
-    @endomargin = 0
-    STDERR.puts "@endomargin must be less than 1"
-  end
-
-  %>
   <style type="text/css">
     .labels span {
       width: 2em;
