@@ -1,6 +1,15 @@
 #encoding: utf-8
 require 'erb'
 
+unless "".respond_to? 'camelize'
+  class String
+    def camelize
+      return self if self !~ /_/ && self =~ /[A-Z]+.*/
+      split('_').map{|e| e.capitalize}.join
+    end
+  end
+end
+
 class IgsPieChart
 
   # data=[100,299,234,55]
