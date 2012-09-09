@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Lucas N. Martins"]
   s.email       = 'lucas.martins@innovit.com.br'
   s.files       = ['lib/igs_pie_chart.rb','templates/pie_chart.html.erb']
-  s.homepage    = 'http://gitlab.lan.innovit.com.br/igs_pie_chart/wikis/index'
+  s.homepage    = 'https://github.com/lucasmartins/igs_pie_chart'
 
   s.add_runtime_dependency 'd3_rails', '>= 2.10', '< 3.0'
 end
