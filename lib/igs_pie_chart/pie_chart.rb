@@ -51,9 +51,9 @@ class Igs::PieChart
   end
 
   def render
-    rendering = '<style>'
+    rendering = '<style>\n'
     rendering+= self.style
-    rendering+= '</style>'
+    rendering+= '</style>\n'
     rendering+= self.script
     rendering+= self.labels
     

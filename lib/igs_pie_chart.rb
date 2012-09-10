@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 begin
   mod = Required::Module::const_get "Igs"
   #It exists
@@ -17,7 +19,6 @@ rescue NameError
   puts "Not a Rails application, nothing to do here!"
 end
 
-#encoding: utf-8
 require 'erb'
 require 'igs_pie_chart/pie_chart'
 
