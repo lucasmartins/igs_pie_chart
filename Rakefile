@@ -15,5 +15,5 @@ end
 
 desc "Install gem"
 task :install do
-  puts `gem install *.gem`
+	puts `gem install *.gem`
 end

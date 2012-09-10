@@ -6,10 +6,17 @@ rescue NameError
   end
 end
 
+begin
+  mod = Required::Module::const_get "Rails"
+  require 'd3_rails'
+rescue NameError
+  #TODO: change this to use a logging api
+  puts "Not a Rails application, nothing to do here!"
+end
+
 #encoding: utf-8
 require 'erb'
 require 'igs_pie_chart/pie_chart'
-require 'd3_rails'
 
 unless "".respond_to? 'camelize'
   class String

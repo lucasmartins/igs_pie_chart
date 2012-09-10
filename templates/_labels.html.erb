@@ -2,12 +2,12 @@
 <% @labels.each_with_index do |l,i| %>
 <% l = l.gsub('_',' ') %>
   <li>
-    <span id="color_<%=i%>">
+    <span id="<%=@target_element%>_color_<%=i%>">
       &nbsp;<%= @data[i] %>%&nbsp;
     </span>
     <%= l.to_s.capitalize %>
     <script type="text/javascript">
-        document.getElementById('color_<%=i%>').setAttribute('style','background-color:'+color(<%=i%>)+';');
+        document.getElementById('<%=@target_element%>_color_<%=i%>').setAttribute('style','background-color:'+color(<%=i%>)+';');
     </script>
   </li>
 <% end %>
