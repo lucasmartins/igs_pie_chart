@@ -58,13 +58,22 @@ Add D3 to your Rails javascript manifest (application.js):
 Make your pie (controller):
 
 ```ruby
-@pie = Igs::PieChart.new(200,0.4,'body',{'Mussarela'=>25,'Brocolli'=>25,'Pepperoni'=>50})
+@pie = Igs::PieChart.new('The Favorite Pizzas Chart',200,0.4,'body',{'Mussarela'=>25,'Brocolli'=>25,'Pepperoni'=>50})
 ```
 
 Savor it raw (view):
 
 ```erb
 <%= raw @pie.render %>
+```
+Done!
+
+You can also render specific parts of the @pie, like in:
+
+```ruby
+<%= raw @pie.style #css %>
+<%= raw @pie.script #javascript %>
+<%= raw @pie.labels #ul+li %>
 ```
 
 Breakdown
