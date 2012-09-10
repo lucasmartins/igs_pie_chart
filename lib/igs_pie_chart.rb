@@ -9,6 +9,7 @@ end
 #encoding: utf-8
 require 'erb'
 require 'igs_pie_chart/pie_chart'
+require 'd3_rails'
 
 unless "".respond_to? 'camelize'
   class String
