@@ -7,8 +7,11 @@ rescue NameError
 end
 
 begin
-  mod = Required::Module::const_get "Rails"
-  require 'd3_rails'
+  if Rails.version.split('.').first.to_i >= 3
+    require 'd3_rails'
+  else
+    STDERR.puts "IGS Pie Chart does not support Rails versions below 3.x"
+  end
 rescue NameError
   #TODO: change this to use a logging api
   puts "Not a Rails application, nothing to do here!"
