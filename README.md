@@ -109,4 +109,4 @@ The names and logos for Innovit are trademarks of Innovit LTDA.
 License
 -------
 
-IGS Pie Chart is free software, we haven't yet studied the best license for it, MIT looks fine though.
+IGS Pie Chart is free software under the [MIT license](https://github.com/lucasmartins/igs_pie_chart/blob/master/LICENSE).
