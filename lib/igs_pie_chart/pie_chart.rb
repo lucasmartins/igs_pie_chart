@@ -12,42 +12,15 @@ class Igs::PieChart
   end
 
   def script
-    begin
-      default_attribution
-
-      path = File.expand_path("../../../templates/_script.html.erb", __FILE__)  
-      output = ERB.new(File.read(path)).result(binding)
-    rescue Exception => e
-      STDERR.puts "Erro ao renderizar JavaScript! #{e}"
-      output = nil
-    end
-    return output
+    return eval_erb('script.html')
   end
 
   def style
-    begin
-      default_attribution
-
-      path = File.expand_path("../../../templates/_style.css.erb", __FILE__)  
-      output = ERB.new(File.read(path)).result(binding)
-    rescue Exception => e
-      STDERR.puts "Erro ao renderizar CSS! #{e}"
-      output = nil
-    end
-    return output
+    return eval_erb('style.css')
   end
 
   def labels
-    begin
-      default_attribution
-
-      path = File.expand_path("../../../templates/_labels.html.erb", __FILE__)  
-      output = ERB.new(File.read(path)).result(binding)
-    rescue Exception => e
-      STDERR.puts "Erro ao renderizar Labels! #{e}"
-      output = nil
-    end
-    return output
+    return eval_erb('labels.html')
   end
 
   def render
@@ -77,7 +50,21 @@ class Igs::PieChart
   end
 
 private
-  def default_attribution
+  
+  def eval_erb(partial)
+    begin
+      default_attributions
+
+      path = File.expand_path("../../../templates/_#{partial}.erb", __FILE__)
+      output = ERB.new(File.read(path)).result(binding)
+    rescue Exception => e
+      STDERR.puts "Erro ao renderizar '#{partial}'! #{e}"
+      output = nil
+    end
+    return output
+  end
+
+  def default_attributions
 
     if @default_attribution == true
       return
