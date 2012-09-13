@@ -18,6 +18,10 @@ var arcs = vis.selectAll("g.arc")
   .data(donut)
 .enter().append("g")
   .attr("class", "arc")
+  /*.attr("onmouseover","evt.target.setAttribute('opacity', '0.5');")
+  .attr("onmouseout","evt.target.setAttribute('opacity', '1');")*/
+  .attr("onmouseover","evt.target.setAttribute('opacity', '0.5');")
+  .attr("onmouseout","evt.target.setAttribute('opacity', '1');")
   .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
 
 arcs.append("path")

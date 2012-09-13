@@ -17,6 +17,8 @@ begin
 rescue NameError
   #TODO: change this to use a logging api
   puts "Not a Rails application, nothing to do here!"
+  puts " .  . "
+  puts " ____ \n\n"
 end
 
 require 'erb'

@@ -36,6 +36,8 @@ class IgsPieChartTest < Test::Unit::TestCase
       puts "Ouch! #{e}"
     end
 
+    `google-chrome #{HTML_TEST_OUTPUT}`
+
   end
 
 end
