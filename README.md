@@ -109,4 +109,4 @@ fix/feature has a high chance of being included, please post a new [GitHub Issue
 License
 -------
 
-IGS Pie Chart is free software under the [MIT license](https://github.com/lucasmartins/igs_pie_chart/blob/master/LICENSE).
+IGS Pie Chart is free software under the [MIT license](http://lucasmartins.mit-license.org).
