@@ -87,6 +87,17 @@ Igs::PieChart.new(size,endomargin=0,target_element='body',data)
   data => "Hash with the labels and floats which represents each slice of the Pizza/Donut."
 ```
 
+Contributors
+-------
+
+![Innovit](http://innovit.com.br/logos_innovit/logo-curvas_180.png)
+
+IGS Pie Chart was bootstrapped inside [Innovit LTDA](http://innovit.com.br)
+
+Special thanks to [Andrik](https://github.com/andrik), for pushing the company to a more open perspective.
+
+The names and logos for Innovit are trademarks of Innovit LTDA.
+
 Contributing
 ------------
 
@@ -94,17 +105,6 @@ This gem is in a very early stage.
 
 If you'd like to contribute a feature or bugfix: Thanks! To make sure your
 fix/feature has a high chance of being included, please post a new [GitHub Issue](http://github.com/lucasmartins/igs_pie_chart/issues)
-
-Credits
--------
-
-![Innovit](http://innovit.com.br/logos_innovit/logo-curvas_180.png)
-
-IGS Pie Chart is maintained and funded by [Innovit LTDA](http://innovit.com.br)
-
-Special thanks to [Andrik](https://github.com/andrik), for pushing the company to a more open perspective.
-
-The names and logos for Innovit are trademarks of Innovit LTDA.
 
 License
 -------
