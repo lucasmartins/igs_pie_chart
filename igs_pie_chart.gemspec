@@ -1,7 +1,7 @@
 #encoding: utf-8
 Gem::Specification.new do |s|
   s.name        = 'igs_pie_chart'
-  s.version     = '0.0.9'
+  s.version     = '0.0.11'
   s.required_ruby_version = '>= 1.9.1'
   s.date        = Date.today
   s.summary     = "Pie Chart is a gem for pizza making."

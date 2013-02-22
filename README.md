@@ -52,7 +52,7 @@ Usage (Rails)
 Add D3 to your Rails javascript manifest (application.js):
 
 ```javascript
-//= require d3.v2
+//= require d3
 ```
 
 Make your pie (controller):
