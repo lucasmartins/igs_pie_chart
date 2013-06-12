@@ -16,5 +16,6 @@ Gem::Specification.new do |s|
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.homepage    = 'https://github.com/lucasmartins/igs_pie_chart'
   s.license     = 'MIT'
-  s.add_runtime_dependency 'd3_rails', '>= 3.1.10'
+  s.add_dependency 'd3_rails', '>= 3.1.10'
+  s.add_dependency 'i18n', '> 0.6.1'
 end
