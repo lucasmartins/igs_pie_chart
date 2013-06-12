@@ -14,7 +14,7 @@ class IgsPieChartTest < Test::Unit::TestCase
     puts "Purging #{JS_TEST_OUTPUT}..."+`rm #{JS_TEST_OUTPUT}`
     
     #these two lines does the trick!
-    pie = PieChart.new('My colorful chart',200,0.4,'body',{'one'=>1.1,'two'=>2.2,'tree'=>3.3,'five'=>5.5,'eight'=>8.8,'thirteen'=>13.13,'twenty_one'=>21.21,'thirty_four'=>34.34,'fifty_five'=>55.55,'eighty_nine'=>89.89,'a_hundread_forty_four'=>144.144})
+    pie = Pie::Chart.new('My colorful chart',200,0.4,'body',{'one'=>1.1,'two'=>2.2,'tree'=>3.3,'five'=>5.5,'eight'=>8.8,'thirteen'=>13.13,'twenty_one'=>21.21,'thirty_four'=>34.34,'fifty_five'=>55.55,'eighty_nine'=>89.89,'a_hundread_forty_four'=>144.144})
     @render = pie.render
 
     assert_not_equal nil, @render
