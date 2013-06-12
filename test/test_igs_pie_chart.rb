@@ -36,10 +36,6 @@ class IgsPieChartTest < Test::Unit::TestCase
       puts "Ouch! #{e}"
     end
 
-    if ENV['USER']=='lucas'
-      #`google-chrome #{HTML_TEST_OUTPUT}`
-    end
-
   end
 
 end
