@@ -1,16 +1,20 @@
 #encoding: utf-8
+$:.push File.expand_path("../lib", __FILE__)
+require "igs_pie_chart/version"
+require 'date'
+
 Gem::Specification.new do |s|
   s.name        = 'igs_pie_chart'
-  s.version     = '0.0.11'
+  s.version     = Igs::Pie::Version::STRING
   s.required_ruby_version = '>= 1.9.1'
   s.date        = Date.today
   s.summary     = "Pie Chart is a gem for pizza making."
   s.description = "#{s.summary} It uses D3 (Data Driven Documents) to aggregate the data and render the SVG awesomeness."
   s.authors     = ["Lucas N. Martins"]
   s.email       = 'lucasmartins@railsnapraia.com'
-  s.files       = ['lib/igs_pie_chart.rb','lib/igs_pie_chart/pie_chart.rb','templates/_labels.html.erb','templates/_script.html.erb','templates/_style.css.erb']
-  s.test_file  = 'test/test_igs_pie_chart.rb' 
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.homepage    = 'https://github.com/lucasmartins/igs_pie_chart'
   s.license     = 'MIT'
-  s.add_runtime_dependency 'd3_rails', '>= 3.0.6'
+  s.add_runtime_dependency 'd3_rails', '>= 3.1.10'
 end

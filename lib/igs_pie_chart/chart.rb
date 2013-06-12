@@ -1,4 +1,4 @@
-class Igs::PieChart
+class Igs::Pie::Chart
   attr_reader :title,:size,:endomargin,:target_element,:data
   # data=[100,299,234,55]
   def initialize(title,size,endomargin=0,target_element='body',data)

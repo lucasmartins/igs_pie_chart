@@ -1,7 +1,8 @@
 IGS Pie Chart
 =============
 
-[![Build Status](https://secure.travis-ci.org/lucasmartins/igs_pie_chart.png?branch=master)](http://travis-ci.org/lucasmartins/igs_pie_chart) [![Dependency Status](https://gemnasium.com/lucasmartins/igs_pie_chart.png?travis)](https://gemnasium.com/lucasmartins/igs_pie_chart) [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/lucasmartins/igs_pie_chart)
+[![Code Climate](https://codeclimate.com/github/lucasmartins/igs_pie_chart.png)](https://codeclimate.com/github/lucasmartins/igs_pie_chart)
+[![Build Status](https://secure.travis-ci.org/lucasmartins/igs_pie_chart.png?branch=master)](http://travis-ci.org/lucasmartins/igs_pie_chart) [![Dependency Status](https://gemnasium.com/lucasmartins/igs_pie_chart.png?travis)](https://gemnasium.com/lucasmartins/igs_pie_chart)
 
 
 Pie Chart is a gem for pizza/donut (charts) making. It uses D3 (Data Driven Documents) to aggregate the data and render SVG awesomeness into an HTML element of your choosing.
